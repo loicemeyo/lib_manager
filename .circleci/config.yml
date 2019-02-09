@@ -2,9 +2,8 @@ version: 2.16.00
 jobs:
   build:
     docker:
-      image: circleci/node:10.10.0
+    - image: circleci/node:10.10.0
     working_directory: ~/lib_manager_server
     steps:
-    -checkout
-    -run: npm install
-    -run: npm test
+    - checkout
+    - run: npm install
